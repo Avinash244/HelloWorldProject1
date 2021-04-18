@@ -1,0 +1,58 @@
+<template>
+    <!-- -first card->-->
+    <lightning-card title="Wire a function in LWC" icon-name="standard:user">
+        <div class="slds-m-around_medium">
+           <template if:true={results}>
+               <template for:each={results} for:item="result">
+                   <div class="slds-item" key={result.Id}>
+                    <strong>{result.Id}</strong>::<strong>{result.Name}</strong> ::<strong>{result.AnnualRevenue}</strong>
+                    ::
+                   </div>
+
+               </template>
+           </template>
+      </div>
+      <hr/>
+    </lightning-card>  
+      <!-- -second card->-->
+        <lightning-card title="Wire a property in LWC" icon-name="standard:user">
+        <div class="slds-m-around_medium">
+           <template if:true={wiredAccounts2.data}>
+               <template for:each={wiredAccounts2.data} for:item="acc">
+                   <div class="slds-item" key={acc.Id}>
+                    <strong>{acc.Id}</strong>::<strong>{acc.Name}</strong>
+                    <lightning-formatted-phone value={acc.Phone}></lightning-formatted-phone>
+                   </div>
+
+               </template>
+           </template>
+           <div>from getSObject Value - {name1}</div>
+      </div>
+    </lightning-card>  
+      <!-- -third card->-->
+      <lightning-card title="call apex imperetively  in LWC" icon-name="standard:user">
+        <div class="slds-m-around_medium">
+            <lightning-button label="Load Contacts" onclick={handleLoad}></lightning-button>
+           <template if:true={contacts}>
+               <template for:each={contacts} for:item="con">
+                   <div class="slds-item" key={con.Id}>
+                    <strong>{con.Id}</strong>::<strong>{con.Name}</strong>
+                   </div>
+               </template>
+           </template>
+      </div>
+    </lightning-card>  
+
+    <!--lightning-card title="Wire a property in LWC" icon-name="standard:user">
+        <div class="slds-m-around_medium">
+           <template if:true={wiredAccounts.data}>
+               <template for:each={wiredAccounts.data} for:item="acc">
+                   <div class="slds-item" key={acc.Id}>
+                    <strong>{acc.Id}</strong>::<strong>{acc.Name}</strong>
+                   </div>
+
+               </template>
+           </template>
+      </div>
+    </lightning-card-->        
+</template>

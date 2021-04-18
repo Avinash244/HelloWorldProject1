@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="If:false directive demo " icon-name="custom:custom18">
+        <div class="slds-m-around_medium">
+            <button class="slds-button slds-button_success" onclick={hideHandler}>click me to show the text</button>    
+            <template if:false={hideText}>
+                <h1>Hurrey!! you are able to see hidden text</h1>
+            </template>
+        </div>
+    </lightning-card>
+    <lightning-card title="If:false directive demo " icon-name="custom:custom19">
+        <div class="slds-m-around_medium">
+            <button class="slds-button slds-button_success" onclick={hideHandler2}>click me to show the text</button>    
+            <template if:false={hideText2.result}>
+                <h1>Hurrey!! you are able to see hidden text</h1>
+            </template>
+        </div>
+    </lightning-card>
+</template>

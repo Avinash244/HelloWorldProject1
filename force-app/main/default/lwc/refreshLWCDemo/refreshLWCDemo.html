@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Refresh Apex Demo" icon-name="custom:custom24">
+        <div class="slds-m-around_medium">
+            {isContactAvailable}
+            <template if:true={wiredData.data}>
+                <lightning-datatable key-field="Id" 
+                data={wiredData.data} 
+                columns={columns} 
+                hide-checkbox-column="true" 
+                show-row-number-column="true"
+                draft-values={draftValues}
+                onsave={handleSave}
+                > 
+                </lightning-datatable> 
+            </template>
+        </div>
+    </lightning-card>
+</template>

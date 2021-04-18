@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="If:true directive demo " icon-name="custom:custom17">
+        <div class="slds-m-around_medium">
+            <button class="slds-button slds-button_success" onclick={showHandler}>click me to show the text</button>    
+            <template if:true={showText}>
+                <h1>Hurrey!! you are able to see hidden text</h1>
+            </template>
+        </div>
+    </lightning-card>
+</template>

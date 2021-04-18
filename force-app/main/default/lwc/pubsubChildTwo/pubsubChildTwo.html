@@ -1,0 +1,15 @@
+<template>
+    <div class="child-section">
+        <p>Child Two</p>
+        <template for:each={accordianList} for:item="list">
+            <div key={list.id}>
+                <button class={list.class}>{list.name}</button>
+                <template if:true={list.selected}>
+                    <div class="panel">
+                        <p>Lorem ipsum sit amet,consectetur adipisicing elit,sed do eiusmod tempor incididunt  ut labore et dolore magne aliqua </p>
+                    </div>
+                </template>
+            </div>
+        </template>
+    </div>
+</template>

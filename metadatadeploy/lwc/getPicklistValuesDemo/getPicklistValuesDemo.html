@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="get Picklist values  wire adapter demo" icon-name="standard:user">
+        <div class="slds-m-around_medium">
+           Default  record type ID: {defaultRecordTypeId}
+           <template if:true={industryPicklistValues.data}>
+            <lightning-combobox name="Industry" label="Industry" value={picklistvalue} placeholder="Select" options={industryPicklistValues.data.values} onchange={changeHandler}></lightning-combobox>
+           </template>
+      </div>
+    </lightning-card>    
+</template>

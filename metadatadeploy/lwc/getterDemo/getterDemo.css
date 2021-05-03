@@ -1,0 +1,33 @@
+.button{
+    border:none;
+    color:white;
+    padding: 14px,28px;
+    cursor: pointer;
+    background-color: #e7e7e7;
+    color:black;
+    border: 1px solid black;
+},
+.green{
+    background-color: green;
+}
+.red{
+    background-color: red;
+}
+.box{
+    height: 100px;
+    width:100px;
+    border:1px solid black;
+    
+}
+.box-green{
+    background-color: green;
+    height: 100px;
+    width:100px;
+    border:1px solid black;
+}
+.box-red{
+    height: 100px;
+    width:100px;
+    border:1px solid black;
+    background-color: red;
+}

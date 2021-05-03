@@ -1,0 +1,16 @@
+.child1-section{
+    border:5px solid;
+    margin: 2rem;
+}
+.danger{
+    background-color: #f44336;
+}
+.danger:hover{
+    background-color: #da190b;
+}
+.warning{
+    background-color: #f44336;
+}
+.warning:hover{
+    background-color: #e68a00;
+}

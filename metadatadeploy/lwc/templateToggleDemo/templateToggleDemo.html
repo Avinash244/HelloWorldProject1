@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="toggle directive demo " icon-name="custom:custom20">
+        <div class="slds-m-around_medium">
+            <button class="slds-button slds-button_success" onclick={toggleHandler}>click me to toggle the text</button>    
+            <template if:false={toggleText}>
+                <h1>lets play Hide and seek!!!!!!!!!!!</h1>
+            </template>
+        </div>
+    </lightning-card>
+</template>

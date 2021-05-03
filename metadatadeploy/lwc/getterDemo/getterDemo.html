@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="getter demo " icon-name="custom:custom22">
+        <div class="slds-m-around_medium">
+            <h1 class="slds-text-heading_large">{title}</h1>
+        </div>
+    </lightning-card> 
+    <lightning-card title="getter demo " icon-name="custom:custom23">
+        <div class="slds-m-around_medium">
+            <h1 class="slds-text-heading_large">{getTitle}</h1>
+        </div>
+        <div class="slds-m-around_medium">
+           <button onclick={clickHandler}>ON</button>
+           <button onclick={clickHandler}>OFF</button>
+        </div>
+        <div class="slds-m-around_medium">
+            <div class="box">
+            </div>
+         </div>
+         <div class="slds-m-around_medium">
+            <div class={boxStatus} >
+            </div>
+         </div>
+    </lightning-card> 
+</template>
